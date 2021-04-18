@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: $lg-desktop) {
+	.container {
+		max-width: 70%;
+	}
+}
+
+@media screen and (min-width: $wide) {
+	.container {
+		max-width: 60%;
+	}
+}
