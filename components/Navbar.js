@@ -11,26 +11,17 @@ const Navbar = () => {
 	return (
 		<header className={style.header}>
 			<nav className={style.header__nav}>
-				<div className={style.logo}>
-					<Link href="/">
-						<a>Noortje Lenaerts</a>
-					</Link>
-				</div>
+				<h1>Noortje Lenaerts</h1>
 				<div className={style['menu-items'] + ' ' + (open ? style.active : null)}>
 					<ul>
-						<li className={style.home}>
-							<Link href="/">
-								<a>Home</a>
-							</Link>
-						</li>
 						<li>
 							<Link href="/portfolio">
 								<a>Portfolio</a>
 							</Link>
 						</li>
 						<li>
-							<Link href="/contact">
-								<a>Contact</a>
+							<Link href="/information">
+								<a>Information</a>
 							</Link>
 						</li>
 					</ul>

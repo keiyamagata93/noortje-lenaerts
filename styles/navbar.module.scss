@@ -3,7 +3,6 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 150px;
-	overflow: hidden;
 
 	&__nav {
 		width: 100%;
@@ -12,9 +11,11 @@
 		align-items: center;
 		font-size: 1.2rem;
 		text-transform: uppercase;
+		// position: relative;
 
-		.logo {
-			font-weight: 600;
+		h1 {
+			font-size: 1.2rem;
+			// font-weight: 600;
 		}
 
 		.menu-items {
@@ -38,7 +39,7 @@
 
 			ul {
 				text-align: center;
-				height: 25vh;
+				height: 20vh;
 				display: flex;
 				justify-content: space-around;
 				flex-direction: column;
@@ -47,6 +48,7 @@
 
 			&.active {
 				right: 0;
+				overflow: hidden;
 			}
 
 			img {
@@ -116,7 +118,7 @@
 			}
 			.menu-items {
 				position: inherit;
-				width: 65%;
+				width: 68%;
 				height: 150px;
 				display: flex;
 				justify-content: space-between;

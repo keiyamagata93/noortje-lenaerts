@@ -10,7 +10,7 @@ const stairs = () => {
 				<a
 					className={styles.close}
 					onClick={() => {
-						window.history.back();
+						window.history.go(-1);
 					}}>
 					<IconContext.Provider value={{ size: '2rem' }}>
 						<GrClose />

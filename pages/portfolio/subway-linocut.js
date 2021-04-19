@@ -10,7 +10,7 @@ const tram = () => {
 				<a
 					className={styles.close}
 					onClick={() => {
-						window.history.back();
+						window.history.go(-1);
 					}}>
 					<IconContext.Provider value={{ size: '2rem' }}>
 						<GrClose />
@@ -23,7 +23,7 @@ const tram = () => {
 					<p>Linocut of the subway in Antwerp.</p>
 				</div>
 				<div className={styles.images}>
-					<img src="/images/home/linocut-tram.jpg" alt="linocut tram" />
+					<img src="/images/work/linocut-tram/linocut-tram.jpg" alt="linocut tram" />
 				</div>
 			</div>
 		</>

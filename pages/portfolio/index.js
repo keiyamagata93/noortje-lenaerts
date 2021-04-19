@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 import styles from '../../styles/portfolio.module.scss';
 
@@ -29,21 +30,6 @@ const portfolio = () => {
 						</div>
 					</a>
 				</Link>
-				<Link href="/portfolio/bonsai">
-					<a>
-						<div className={styles.project}>
-							<div className={styles.title}>
-								<h2>Bonsai</h2>
-							</div>
-							<Image
-								src="/images/home/bonsai.gif"
-								alt="bonsai animation"
-								layout="fill"
-								objectFit="cover"
-							/>
-						</div>
-					</a>
-				</Link>
 
 				<Link href="/portfolio/japanese-house">
 					<a>
@@ -56,36 +42,21 @@ const portfolio = () => {
 								alt="house illustration"
 								layout="fill"
 								objectFit="cover"
+								objectPosition="top"
 							/>
 						</div>
 					</a>
 				</Link>
 
-				<Link href="/portfolio/stairs">
+				<Link href="/portfolio/sketches-of-antwerp">
 					<a>
 						<div className={styles.project}>
 							<div className={styles.title}>
-								<h2>Stairs</h2>
+								<h2>Sketches Of Antwerp</h2>
 							</div>
 							<Image
-								src="/images/home/stairs.jpg"
-								alt="stairs illustation"
-								layout="fill"
-								objectFit="cover"
-							/>
-						</div>
-					</a>
-				</Link>
-
-				<Link href="/portfolio/bouncing-ball">
-					<a>
-						<div className={styles.project}>
-							<div className={styles.title}>
-								<h2>Bouncing Ball</h2>
-							</div>
-							<Image
-								src="/images/home/ball.gif"
-								alt="ball animation"
+								src="/images/home/walk.jpg"
+								alt="sketch of antwerp illustation"
 								layout="fill"
 								objectFit="cover"
 							/>
@@ -109,38 +80,6 @@ const portfolio = () => {
 					</a>
 				</Link>
 
-				<Link href="/portfolio/sketches-of-antwerp">
-					<a>
-						<div className={styles.project}>
-							<div className={styles.title}>
-								<h2>Sketches Of Antwerp</h2>
-							</div>
-							<Image
-								src="/images/home/walk.jpg"
-								alt="sketch of antwerp illustation"
-								layout="fill"
-								objectFit="cover"
-							/>
-						</div>
-					</a>
-				</Link>
-
-				<Link href="/portfolio/everybody-goes-to-sleep">
-					<a id="youme">
-						<div className={styles.project}>
-							<div className={styles.title}>
-								<h2>Everybody goes to sleep</h2>
-							</div>
-							<Image
-								src="/images/home/sleep.jpg"
-								alt="everybody goes to sleep poster"
-								layout="fill"
-								objectFit="cover"
-							/>
-						</div>
-					</a>
-				</Link>
-
 				<Link href="/portfolio/things-that-quicken-the-heart">
 					<a>
 						<div className={styles.project}>
@@ -150,6 +89,39 @@ const portfolio = () => {
 							<Image
 								src="/images/home/wenen.jpg"
 								alt="wenen"
+								layout="fill"
+								objectFit="cover"
+							/>
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/portfolio/stairs">
+					<a>
+						<div className={styles.project}>
+							<div className={styles.title}>
+								<h2>Stairs</h2>
+							</div>
+							<Image
+								src="/images/home/stairs.jpg"
+								alt="stairs illustation"
+								layout="fill"
+								objectFit="cover"
+								objectPosition="top"
+							/>
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/portfolio/the-symphony">
+					<a>
+						<div className={styles.project}>
+							<div className={styles.title}>
+								<h2>The Symphony</h2>
+							</div>
+							<Image
+								src="/images/home/symphony.gif"
+								alt="the symphony animation"
 								layout="fill"
 								objectFit="cover"
 							/>
@@ -173,15 +145,80 @@ const portfolio = () => {
 					</a>
 				</Link>
 
-				<Link href="/portfolio/the-symphony">
+				<Link href="/portfolio/everybody-goes-to-sleep">
+					<a id="youme">
+						<div className={styles.project}>
+							<div className={styles.title}>
+								<h2>Everybody goes to sleep</h2>
+							</div>
+							<Image
+								src="/images/home/sleep.jpg"
+								alt="everybody goes to sleep poster"
+								layout="fill"
+								objectFit="cover"
+							/>
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/portfolio/bonsai">
 					<a>
 						<div className={styles.project}>
 							<div className={styles.title}>
-								<h2>The Symphony</h2>
+								<h2>Bonsai</h2>
 							</div>
 							<Image
-								src="/images/home/symphony.gif"
-								alt="the symphony animation"
+								src="/images/home/bonsai.gif"
+								alt="bonsai animation"
+								layout="fill"
+								objectFit="cover"
+							/>
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/portfolio/bouncing-ball">
+					<a>
+						<div className={styles.project}>
+							<div className={styles.title}>
+								<h2>Bouncing Ball</h2>
+							</div>
+							<Image
+								src="/images/home/ball.gif"
+								alt="ball animation"
+								layout="fill"
+								objectFit="cover"
+							/>
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/portfolio/subway-linocut">
+					<a>
+						<div className={styles.project}>
+							<div className={styles.title}>
+								<h2>Subway Linocut</h2>
+							</div>
+							<Image
+								src="/images/home/linocut.jpg"
+								alt="linocut tram"
+								layout="fill"
+								objectFit="cover"
+								objectPosition="0 20%"
+							/>
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/portfolio/raf-in-drag">
+					<a>
+						<div className={styles.project}>
+							<div className={styles.title}>
+								<h2>Raf In Drag</h2>
+							</div>
+							<Image
+								src="/images/home/raf.jpg"
+								alt="raf in drag"
 								layout="fill"
 								objectFit="cover"
 							/>
@@ -198,38 +235,6 @@ const portfolio = () => {
 							<Image
 								src="/images/home/luckycat.gif"
 								alt="lucky cat animation"
-								layout="fill"
-								objectFit="cover"
-							/>
-						</div>
-					</a>
-				</Link>
-
-				<Link href="/portfolio/subway-linocut">
-					<a>
-						<div className={styles.project}>
-							<div className={styles.title}>
-								<h2>Subway Linocut</h2>
-							</div>
-							<Image
-								src="/images/home/linocut-tram.jpg"
-								alt="linocut tram"
-								layout="fill"
-								objectFit="cover"
-							/>
-						</div>
-					</a>
-				</Link>
-
-				<Link href="/portfolio/raf-in-drag">
-					<a>
-						<div className={styles.project}>
-							<div className={styles.title}>
-								<h2>Raf In Drag</h2>
-							</div>
-							<Image
-								src="/images/home/raf.jpg"
-								alt="raf in drag"
 								layout="fill"
 								objectFit="cover"
 							/>
@@ -301,6 +306,7 @@ const portfolio = () => {
 					</a>
 				</Link>
 			</main>
+			<Footer />
 		</>
 	);
 };

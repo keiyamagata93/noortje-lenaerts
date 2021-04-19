@@ -10,7 +10,7 @@ const youme = () => {
 				<a
 					className={styles.close}
 					onClick={() => {
-						window.history.back();
+						window.history.go(-1);
 					}}>
 					<IconContext.Provider value={{ size: '2rem' }}>
 						<GrClose />
@@ -21,7 +21,7 @@ const youme = () => {
 				<div className={styles.text}>
 					<h1>Everybody goes to sleep</h1>
 					<p>Poster made from a quote from Maria-Elisabeth Niebius.</p>
-					<p>
+					<p className={styles.quote}>
 						“Everybody goes to sleep. Some like to nap during the day, some sleep
 						through the night. Some need a lot of space, some curl up into little balls.
 						Some listen to stories that carry them into the land op dreams. Sleeping

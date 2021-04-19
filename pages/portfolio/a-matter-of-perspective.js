@@ -10,7 +10,7 @@ const perspective = () => {
 				<a
 					className={styles.close}
 					onClick={() => {
-						history.back();
+						window.history.go(-1);
 					}}>
 					<IconContext.Provider value={{ size: '2rem' }}>
 						<GrClose />

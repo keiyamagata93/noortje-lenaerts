@@ -10,7 +10,7 @@ const raf = () => {
 				<a
 					className={styles.close}
 					onClick={() => {
-						window.history.back();
+						window.history.go(-1);
 					}}>
 					<IconContext.Provider value={{ size: '2rem' }}>
 						<GrClose />
@@ -43,10 +43,6 @@ const raf = () => {
 					<img
 						src="/images/work/raf/detail5.jpg"
 						alt="illustration raf in drag detail 5"
-					/>
-					<img
-						src="/images/work/raf/detail6.jpg"
-						alt="illustration raf in drag detail 6"
 					/>
 				</div>
 			</div>

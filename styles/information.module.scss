@@ -1,0 +1,43 @@
+@use './variables' as *;
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	min-height: 70vh;
+
+	.picture {
+		width: 25vw;
+		height: 25vw;
+		background: #000;
+	}
+
+	.text {
+		width: 60%;
+
+		h1 {
+			font-size: 1rem;
+			font-weight: 400;
+			margin-bottom: 1.5em;
+		}
+
+		p {
+			margin-bottom: 1.5em;
+		}
+
+		a {
+			transition: all 250ms;
+			-webkit-transition: all 250ms;
+			-moz-transition: all 250ms;
+			-ms-transition: all 250ms;
+			-o-transition: all 250ms;
+
+			&:hover {
+				color: $grey;
+			}
+
+			&.sociallinks {
+				margin-left: 2rem;
+			}
+		}
+	}
+}
