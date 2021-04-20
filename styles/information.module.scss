@@ -3,7 +3,7 @@
 .info {
 	display: flex;
 	justify-content: space-between;
-	min-height: 70vh;
+	min-height: 80vh;
 
 	.picture {
 		width: 35%;
@@ -36,6 +36,14 @@
 			&.sociallinks {
 				margin-left: 2rem;
 			}
+		}
+	}
+}
+
+@media screen and (min-width: $wide) {
+	.info {
+		.picture {
+			width: 30%;
 		}
 	}
 }
