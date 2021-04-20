@@ -6,7 +6,7 @@ import styles from '../../styles/project.module.scss';
 const bonsai = () => {
 	return (
 		<>
-			<Link href="/portfolio">
+			<Link href="/">
 				<a
 					className={styles.close}
 					onClick={() => {
